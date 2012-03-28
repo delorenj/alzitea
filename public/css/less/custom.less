@@ -24,21 +24,22 @@ body {
 .hero-unit {
 	background-color: fade(@navbarBackground, 70%);
 	padding: 10px;
-	.l {
+	overflow: hidden;
+	height: 400px;
+	.l,.m {
+		padding: 60px 0px 0px 60px;
 		text-align: center;
-		padding: 40px;
-		float: left;
-		font-style: italic;
+	}
+	.m p{
+		font-size: 3em;
+		line-height: 1.4em;
 	}
 	.r {
 		float: right;
-		img {
-			 height: 350px;
-		}
 	}
 }
 
-
+// .l,.m,.r { border: 1px solid yellow;}
 
 // Navbar
 // -------------------------

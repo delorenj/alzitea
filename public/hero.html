@@ -58,13 +58,20 @@
     <div class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit clearfix">
-        <div class="l">
+      <div class="hero-unit clearfix row">
+        <div class="span2 l">
           <h1>Drink</h1>
           <p>to your health</p>
           <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
         </div>
-        <div class="r">
+        <div id="hero-carousel" class="span6 m carousel">
+          <div class="carousel-inner">
+            <p class="active item">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut</p>
+            <p class="item">Porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut</p>
+            <p class="item">Id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut</p>
+          </div>
+        </div>
+        <div class="span2 r">
           <img src="img/alzi_bottle_1.png" />
         </div>
       </div>
@@ -91,7 +98,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Company 2012</p>
+        <p>&copy; ALZi Tea, 2012</p>
       </footer>
 
     </div> <!-- /container -->
@@ -112,6 +119,11 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript">
+      $("#hero-carousel").carousel({
+        interval: 5000
+      });
+    </script>
 
   </body>
 </html>
