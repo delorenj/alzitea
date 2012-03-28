@@ -1,0 +1,33 @@
+// Scaffolding
+@backgroundImage : "../../img/vintage-wallpaper-1.png";
+@img : "../../img";
+
+body {
+	padding-top: 0 !important;
+	background: #e7ddc0 url(@backgroundImage) repeat 0 0;
+}
+
+
+// Navbar
+// -------------------------
+@navbarHeight:                    50px;
+@navbarBackground:                #426638;
+@navbarBackgroundHighlight:       #426638;
+@dirtHeight : 240px;
+@logoHeight:  106px;
+@bannerHeight: @dirtHeight;
+
+
+.banner {
+	height: @bannerHeight;
+	background-color: #e7ddc0;
+
+	.dirt {
+		height: @dirtHeight;
+		background: #e7ddc0 url('@{img}/dirt.png') 0 @logoHeight repeat-x;
+		text-align: center;
+		img {
+			width: 640px;
+		}
+	}
+}
