@@ -152,6 +152,7 @@ a:hover {
 .row {
   margin-left: -20px;
   *zoom: 1;
+  *zoom: 1;
 }
 .row:before,
 .row:after {
@@ -245,6 +246,7 @@ a:hover {
 .row-fluid {
   width: 100%;
   *zoom: 1;
+  *zoom: 1;
 }
 .row-fluid:before,
 .row-fluid:after {
@@ -301,6 +303,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   *zoom: 1;
+  *zoom: 1;
 }
 .container:before,
 .container:after {
@@ -313,6 +316,7 @@ a:hover {
 .container-fluid {
   padding-left: 20px;
   padding-right: 20px;
+  *zoom: 1;
   *zoom: 1;
 }
 .container-fluid:before,
@@ -942,6 +946,7 @@ select:focus:required:invalid:focus {
   background-color: #dddddd;
   border-top: 1px solid #ddd;
   *zoom: 1;
+  *zoom: 1;
 }
 .form-actions:before,
 .form-actions:after {
@@ -1153,6 +1158,7 @@ legend + .control-group {
 }
 .form-horizontal .control-group {
   margin-bottom: 20px;
+  *zoom: 1;
   *zoom: 1;
 }
 .form-horizontal .control-group:before,
@@ -2275,6 +2281,7 @@ input[type="submit"].btn.btn-mini {
 .btn-group {
   position: relative;
   *zoom: 1;
+  *zoom: 1;
   *margin-left: .3em;
 }
 .btn-group:before,
@@ -2534,6 +2541,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs,
 .nav-pills {
   *zoom: 1;
+  *zoom: 1;
 }
 .nav-tabs:before,
 .nav-pills:before,
@@ -2681,6 +2689,7 @@ input[type="submit"].btn.btn-mini {
   border-color: #aaaaaa;
 }
 .tabbable {
+  *zoom: 1;
   *zoom: 1;
 }
 .tabbable:before,
@@ -2884,6 +2893,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-form {
   margin-bottom: 0;
+  *zoom: 1;
   *zoom: 1;
 }
 .navbar-form:before,
@@ -3208,6 +3218,7 @@ input[type="submit"].btn.btn-mini {
   list-style: none;
   text-align: center;
   *zoom: 1;
+  *zoom: 1;
 }
 .pager:before,
 .pager:after {
@@ -3336,6 +3347,7 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: inset 0 1px 0 #ffffff;
   -moz-box-shadow: inset 0 1px 0 #ffffff;
   box-shadow: inset 0 1px 0 #ffffff;
+  *zoom: 1;
   *zoom: 1;
 }
 .modal-footer:before,
@@ -3524,6 +3536,7 @@ input[type="submit"].btn.btn-mini {
 .thumbnails {
   margin-left: -20px;
   list-style: none;
+  *zoom: 1;
   *zoom: 1;
 }
 .thumbnails:before,
@@ -3958,7 +3971,7 @@ a.thumbnail:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  background-color: #3cb9c6;
+  background-color: #426638;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -4069,7 +4082,7 @@ footer.footer p {
   box-shadow: none;
 }
 div.subnav {
-  background-color: rgba(42, 99, 105, 0.9);
+  background-color: rgba(62, 99, 105, 0.9);
   background-image: none;
   border: 0px solid transparent;
   -webkit-border-radius: 0;
@@ -4694,9 +4707,33 @@ blockquote.pull-right {
 blockquote small {
   color: rgba(255, 255, 255, 0.6);
 }
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
 body {
   padding-top: 0 !important;
   background: #e7ddc0 url("../../img/vintage-wallpaper-1.png") repeat 0 0;
+}
+.hero-unit {
+  background-color: rgba(66, 102, 56, 0.7);
+  padding: 10px;
+}
+.hero-unit .l {
+  text-align: center;
+  padding: 40px;
+  float: left;
+  font-style: italic;
+}
+.hero-unit .r {
+  float: right;
+}
+.hero-unit .r img {
+  height: 350px;
 }
 .banner {
   height: 240px;
@@ -4706,6 +4743,7 @@ body {
   height: 240px;
   background: #e7ddc0 url('../../img/dirt.png') 0 106px repeat-x;
   text-align: center;
+  padding-right: 26px;
 }
 .banner .dirt img {
   width: 640px;

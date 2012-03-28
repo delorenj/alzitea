@@ -1,11 +1,43 @@
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 // Scaffolding
 @backgroundImage : "../../img/vintage-wallpaper-1.png";
 @img : "../../img";
-
+@bodyColor : #e7ddc0;
 body {
 	padding-top: 0 !important;
-	background: #e7ddc0 url(@backgroundImage) repeat 0 0;
+	background: @bodyColor url(@backgroundImage) repeat 0 0;
 }
+
+// Hero Unit
+// -------------------------
+@heroUnitBackground: @navbarBackground;
+
+.hero-unit {
+	background-color: fade(@navbarBackground, 70%);
+	padding: 10px;
+	.l {
+		text-align: center;
+		padding: 40px;
+		float: left;
+		font-style: italic;
+	}
+	.r {
+		float: right;
+		img {
+			 height: 350px;
+		}
+	}
+}
+
 
 
 // Navbar
@@ -20,12 +52,14 @@ body {
 
 .banner {
 	height: @bannerHeight;
-	background-color: #e7ddc0;
+	background-color: @bodyColor;
+	// border-bottom: 6px solid darken(#3d260e, 5%);
 
 	.dirt {
 		height: @dirtHeight;
 		background: #e7ddc0 url('@{img}/dirt.png') 0 @logoHeight repeat-x;
 		text-align: center;
+		padding-right: 26px;
 		img {
 			width: 640px;
 		}
