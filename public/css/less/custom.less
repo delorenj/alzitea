@@ -11,7 +11,9 @@
 // Scaffolding
 @backgroundImage : "../../img/vintage-wallpaper-1.png";
 @img : "../../img";
-@bodyColor : #e7ddc0;
+// @bodyColor : #e7ddc0;
+@bodyColor : #f1f1f1;
+
 body {
 	padding-top: 0 !important;
 	background: @bodyColor url(@backgroundImage) repeat 0 0;
@@ -25,17 +27,20 @@ body {
 	background-color: fade(@navbarBackground, 70%);
 	padding: 10px;
 	overflow: hidden;
-	height: 400px;
+	height: 200px;
 	.l,.m {
-		padding: 60px 0px 0px 60px;
+		padding: 7px 0px 0px 50px;
 		text-align: center;
 	}
 	.m p{
-		font-size: 3em;
+		font-size: 2.4em;
 		line-height: 1.4em;
 	}
 	.r {
 		float: right;
+		img {
+			height: 200px;
+		}
 	}
 }
 
@@ -58,7 +63,7 @@ body {
 
 	.dirt {
 		height: @dirtHeight;
-		background: #e7ddc0 url('@{img}/dirt.png') 0 @logoHeight repeat-x;
+		background: @bodyColor url('@{img}/dirt.png') 0 @logoHeight repeat-x;
 		text-align: center;
 		padding-right: 26px;
 		img {

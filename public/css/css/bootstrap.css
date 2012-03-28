@@ -4717,33 +4717,36 @@ blockquote small {
 }
 body {
   padding-top: 0 !important;
-  background: #e7ddc0 url("../../img/vintage-wallpaper-1.png") repeat 0 0;
+  background: #f1f1f1 url("../../img/vintage-wallpaper-1.png") repeat 0 0;
 }
 .hero-unit {
   background-color: rgba(66, 102, 56, 0.7);
   padding: 10px;
   overflow: hidden;
-  height: 400px;
+  height: 200px;
 }
 .hero-unit .l,
 .hero-unit .m {
-  padding: 60px 0px 0px 60px;
+  padding: 7px 0px 0px 50px;
   text-align: center;
 }
 .hero-unit .m p {
-  font-size: 3em;
+  font-size: 2.4em;
   line-height: 1.4em;
 }
 .hero-unit .r {
   float: right;
 }
+.hero-unit .r img {
+  height: 200px;
+}
 .banner {
   height: 240px;
-  background-color: #e7ddc0;
+  background-color: #f1f1f1;
 }
 .banner .dirt {
   height: 240px;
-  background: #e7ddc0 url('../../img/dirt.png') 0 106px repeat-x;
+  background: #f1f1f1 url('../../img/dirt.png') 0 106px repeat-x;
   text-align: center;
   padding-right: 26px;
 }
