@@ -1,1 +1,2 @@
-<?php require_once 'paths.php'; ?>
+<?php
+// placeholder file for Heroku PHP detection

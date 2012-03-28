@@ -1,3 +1,5 @@
+SetEnv LARAVEL_ENV local
+
 <IfModule mod_rewrite.c>
      RewriteEngine on
 
