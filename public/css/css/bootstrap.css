@@ -4715,6 +4715,32 @@ blockquote small {
   content: "";
   display: table;
 }
+.starburst {
+  display: block;
+  width: 6em;
+  height: 6em;
+  background: #fe0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  rotation: -45deg;
+  position: relative;
+  top: 2em;
+  left: 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.starburst span {
+  display: block;
+  width: 6em;
+  height: 6em;
+  background: #fe0;
+  -webkit-transform: rotate(22.5deg);
+  -moz-transform: rotate(22.5deg);
+  rotation: 22.5deg;
+}
 body {
   padding-top: 0 !important;
   background: #f1f1f1 url("../../img/vintage-wallpaper-1.png") repeat 0 0;
@@ -4743,14 +4769,26 @@ body {
 }
 .banner {
   height: 240px;
-  background-color: #f1f1f1;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E3YmVmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iI2YyZjhmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top, #a7bef2 0%, #f2f8ff 52%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a7bef2), color-stop(52%, #f2f8ff));
+  background: -webkit-linear-gradient(top, #a7bef2 0%, #f2f8ff 52%);
+  background: -o-linear-gradient(top, #a7bef2 0%, #f2f8ff 52%);
+  background: -ms-linear-gradient(top, #a7bef2 0%, #f2f8ff 52%);
+  background: linear-gradient(top, #a7bef2 0%, #f2f8ff 52%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#a7bef2', endColorstr='#f2f8ff', GradientType=0);
+  margin-bottom: 20px;
 }
 .banner .dirt {
-  height: 240px;
-  background: #f1f1f1 url('../../img/dirt.png') 0 106px repeat-x;
+  height: 134px;
+  position: relative;
+  top: 106px;
+  background: #f1f1f1 url('../../img/dirt.png') 0 0 repeat-x;
   text-align: center;
   padding-right: 26px;
 }
 .banner .dirt img {
+  position: relative;
+  top: -106px;
   width: 640px;
 }
